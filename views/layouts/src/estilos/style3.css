@@ -1,0 +1,51 @@
+.rodape{
+	background-color: rgba(0, 12, 56, 1);
+}
+
+.rodape-inicial{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 1px solid white;
+
+}
+
+.rodape-inicial img{
+	width: 12%;
+}
+
+i.insta, i.face{
+	color:white;
+}
+
+.icone{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px; 
+}
+
+.icone a{
+	text-decoration: none;
+	color:white;
+	margin: 0 10px;
+}
+
+.icone a:hover{
+	color: #F4A460;
+}
+
+.rodape-final{
+	height:100px;
+}
+
+.rodape-final-paragrafo{
+	margin-top: 20px;	
+	text-align: center;
+	color:white;
+}
+
+.rodape-final-creditos{
+	margin-top: 20px;
+	text-align: center;
+	color:white;
+}

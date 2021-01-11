@@ -1,0 +1,169 @@
+.cabecalho .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    height: 100%;
+  }
+  .cabecalho{
+    height:100px;
+    background-color: #ebebe0;
+    border-bottom: 1px solid #C0C0C0;
+    padding: 5px;
+    flex-wrap: wrap;
+  }
+  
+  .cabecalho img{
+    width: 15%;
+  }
+  
+  .cabecalho-nav a{
+    font-size:20px;
+    padding: 15px;
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+    margin:2rem;
+  }
+  
+  .cabecalho-nav a:hover{
+    color:#248f24;
+  }
+  
+  #cabecalho-nav-link{
+    color:black;
+  }
+  
+  .frase{
+    margin-bottom: 20px;
+    margin-top: 16px;
+    text-align: center;
+    text-transform:uppercase;
+    }
+  
+  .pagina-contatos{
+    padding-top: 3px;
+    border-radius:10px;
+    border:1px solid black;
+    background-color: #ffffff ;
+    margin: 100px auto;
+    width: 400px;
+    }
+  
+  .conteudo-form{
+    margin: 0 auto;
+    width: 60%;
+    fill: 20px;
+    background-color:#ffffff ;
+    margin-bottom: 6px;
+    }
+  
+  #botao{text-align: center;}
+  
+  .botaoEnviar{
+    height: 20px;
+    width: 90px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-transform:uppercase;
+  }
+  
+  #ctt{
+   margin-right: 260px;
+  }
+#cabecalho{
+  border-bottom: 3px solid  #000099;
+}
+.cabecalho{
+  height:100px;
+  background-color: #ebebe0;
+  border-bottom: 1px solid #C0C0C0;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.cabecalho img{
+  width: 15%;
+}
+  
+  #contato-fs{
+    text-align: center;
+    margin-left: 100px;
+  }
+  
+  .carousel{
+    width: 1120px;
+    margin:0 auto;
+  }
+
+  .carousel img{
+    width: 1120px;
+  }
+  
+  .container-carousel{
+    background-color: black;
+  }
+  #Letra-home{
+    font-size: 18px;
+  }
+  #seta-direita{
+    height: 10px;
+    width: 10px;
+  }
+
+  /* rodapé  da tati */
+
+  .rodape{
+    background-color: rgba(0, 12, 56, 1);
+  }
+  
+  .rodape-inicial{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white;
+  
+  }
+  
+  .rodape-inicial img{
+    width: 12%;
+  }
+  
+  i.insta, i.face{
+    color:white;
+  }
+  
+  .icone{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+  }
+  
+  .icone a{
+    text-decoration: none;
+    color:white;
+    margin: 0 10px;
+  }
+  
+  .icone a:hover{
+    color: #F4A460;
+  }
+
+  
+  .rodape-final{
+    height:100px;
+  }
+  
+  .rodape-final-paragrafo{
+    margin-top: 20px;	
+    text-align: center;
+    color:white;
+  }
+  
+  .rodape-final-creditos{
+    margin-top: 20px;
+    text-align: center;
+    color:white;
+  }

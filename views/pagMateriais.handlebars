@@ -1,0 +1,35 @@
+ <header class="cabecalho" id="cabecalho">
+    <div class="container">   
+      <nav class="cabecalho-nav">
+        <a id="cabecalho-nav-link" href="/paginamateriais">Página de materiais</a>
+        <img id="seta-direita" src = "./img/seta-direita.png" width="10" height="10"/>
+        <a class="cabecalho-nav-link" id="Letra-home" href="/">Home</a>
+      </nav>
+    </div>
+</header>
+
+
+    <div class="container">
+      <h2>Materiais para empréstimos</h2>
+      <ul class="conteudo-materiais" onclick="window.location='https://pt.wikipedia.org/wiki/Monsta_X'">
+        
+        {{#each posts}}
+          {{#if dataValues.disponibilidade}}
+            <li class="conteudo-materiais-lista">
+              <a href="/formulario"><h2>{{dataValues.nome}}</h2></a>
+              <br></br>
+              <h2>ID:{{dataValues.id}}</h2>
+            </li>
+          {{else}}
+            <li class="conteudo-materiais-lista">
+              <h2>{{dataValues.nome}}</h2>
+              <br></br>
+              <h2>ID:{{dataValues.id}}</h2>
+              <h3>Indisponível</h3>
+
+            </li>
+          {{/if}}
+        {{/each}}
+  
+      </ul>
+    </div>

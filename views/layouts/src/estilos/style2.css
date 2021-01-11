@@ -1,0 +1,123 @@
+.conteudo{
+	margin: 20px 5%;
+	width: 90%;	
+}
+
+.conteudo h2{
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+.conteudo-materiais{
+	display: flex;
+	flex-wrap: wrap;
+	cursor: pointer;
+}
+
+.conteudo-materiais-lista{
+	font-size:20px;
+	text-align: center;
+	height: 100px;
+	background-color:  #838383;
+	border:2px solid black;
+	width: 23%;
+	margin: 1%;
+	box-shadow: 2px 2px 2px #838383;
+  margin-top: 1;
+	height: 11em;
+	display: static;
+	align-items: center;
+  	
+	
+}
+
+.conteudo-materiais-lista:hover{
+	box-shadow: 5px 5px 5px #838383;
+	font-size: 21px;
+}
+.conteudo-materiais-lista:nth-child(4n){
+	margin-right: 0;
+}
+.conteudo-materiais-lista:nth-child(4n + 1){
+	margin-left: 0;
+}
+
+.conteudo-materiais-lista p:after {
+	display: block;
+	width: 45px;
+	height: 45px;
+	margin: 10px auto;
+}
+.fotinha{
+	width:100px;
+	height:100px;
+	border: 1;
+	border-radius: 10%; 
+	margin-bottom: 3;
+  }
+  
+.dropdownmenu ul, .dropdownmenu li {
+  margin: 0;
+  padding: 0;
+}
+.dropdownmenu ul {
+  background: gray;
+  list-style: none;
+  width: 100%;
+}
+.dropdownmenu li {
+  float: left;
+  position: relative;
+  width:auto;
+}
+.dropdownmenu a {
+  background:#032CB3;
+  color: #FFFFFF;
+  display: block;
+  font: bold 12px/20px sans-serif;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+  background: #000000;
+}
+#submenu {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: -1;
+}
+li:hover ul#submenu {
+  opacity: 1;
+  top: 40px;	
+  visibility: visible;
+}
+#submenu li {
+  float: none;
+  width: 100%;
+}
+#submenu a:hover {
+  background: #032CB3;
+}
+#submenu a {
+  background-color:#000000;
+}
+#styling{
+  position: fixed;
+  margin-top: 12px;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #032CB3;
+}
