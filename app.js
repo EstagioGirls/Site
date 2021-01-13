@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const Post = require('./models/Post')
-//const Post2 = require('./models/Post2');
+const PostUsuarios = require('./models/PostUsuarios');
 const handlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
@@ -14,11 +14,19 @@ const session = require('express-session');
     //Body Parser
      app.use(bodyParser.urlencoded({extended:false}))
      app.use(bodyParser.json())
+     app.use(cookieParser('secret'))
+     app.use(session({cookie: {maxAge: null}}))
+
 
 //enxergar o css
 app.use(express.static('views/layouts/src'));
 
-//rotas
+//flash message
+app.use((req,res, next)=>{
+    res.locals.message = req.session.message
+    delete req.session.messages
+    next()
+})
 
 app.get('/', function(req, res){
     res.render('pagInicial')
@@ -33,16 +41,16 @@ app.get('/paginamateriais', function(req, res){
 app.get('/formulario', function(req, res){
     res.render('formulario')
 })
-/*
+
 app.post('/formulario', function(req, res){
-    Post2.findAll({
+    Post.findAll({
         where:{
             id: req.body.id,
             disponibilidade: 1
         }
     }).then(function(posts){
        if(posts.length != 0){
-            Post.create({
+            PostUsuarios.create({
                 nome: req.body.nome,
                 curso: req.body.curso,
                 matricula: req.body.matricula,
@@ -53,7 +61,7 @@ app.post('/formulario', function(req, res){
                 data_dev: req.body.datadev,
                 hora_dev: req.body.horadev
             }).then(function(){
-                Post2.update({ disponibilidade: 0 }, {
+                Post.update({ disponibilidade: 0 }, {
                     where: {
                       id: req.body.id
                     }
@@ -76,7 +84,7 @@ app.post('/formulario', function(req, res){
         }
     })        
 }) 
-*/
+
 app.get('/contato', function(req, res){
     res.render('contato')
 })

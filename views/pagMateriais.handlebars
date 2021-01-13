@@ -8,28 +8,33 @@
     </div>
 </header>
 
-
+<main class="conteudo">
     <div class="container">
       <h2>Materiais para empréstimos</h2>
-      <ul class="conteudo-materiais" onclick="window.location='https://pt.wikipedia.org/wiki/Monsta_X'">
-        
+      <ul class="conteudo-materiais" onclick="window.location= '/formulario'"> 
         {{#each posts}}
-          {{#if dataValues.disponibilidade}}
-            <li class="conteudo-materiais-lista">
-              <a href="/formulario"><h2>{{dataValues.nome}}</h2></a>
-              <br></br>
-              <h2>ID:{{dataValues.id}}</h2>
-            </li>
-          {{else}}
-            <li class="conteudo-materiais-lista">
-              <h2>{{dataValues.nome}}</h2>
-              <br></br>
-              <h2>ID:{{dataValues.id}}</h2>
-              <h3>Indisponível</h3>
+        {{#if dataValues.disponibilidade}} 
 
-            </li>
-          {{/if}}
-        {{/each}}
-  
+        <li class="conteudo-materiais-lista">
+            <a href = "/">
+            <p style ="color:black">{{dataValues.nome}}</p>
+            </a>
+          <br></br>
+         ID:
+          <p style="color:#a80000">{{dataValues.id}}</p> 
+          </li>
+        {{else}}
+        <li class="conteudo-materiais-lista">
+            <a href = "/">
+            <p>{{dataValues.nome}}</p>
+            </a>
+            <p>Indisponivel</p>
+         ID:
+          <p style="color:#a80000">{{dataValues.id}}</p>
+         </li>
+         {{/if}}
+         {{/each}} 
+      
       </ul>
     </div>
+  </main>

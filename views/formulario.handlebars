@@ -1,3 +1,10 @@
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</head>
+
+
 {{#if message}}
 <div style="text-align: center" class="alert alert-{{message.type}}">
 	<button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -33,12 +40,12 @@
 		<input type="date" id="dataemp" name="dataemp" placeholder="Marque o dia*" required>
 	</div>
 	<div class="field">
-		<label for="horaemp">Horário:</label>
-		<input type="time" id="horaempa" name="horaemp" placeholder="Marque o horário">	
+		<label for="horaemp">Horário:*</label>
+		<input type="time" id="horaempa" name="horaemp" placeholder="Marque o horário" required>	
 	</div>
 	<div class="field">
-		<label for="datadev">Data da devolução:</label>
-			<input type="date" id="datadev" name="datadev" placeholder="Marque o dia">
+		<label for="datadev">Data da devolução:*</label>
+			<input type="date" id="datadev" name="datadev" placeholder="Marque o dia" required>
 	</div>
 	<div class="field">
 		<label for="horadev">Horário:</label>

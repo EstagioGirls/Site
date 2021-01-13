@@ -17,9 +17,15 @@ const Post = db.sequelize.define('materiais', {
 })
 /*
 Post.create({
-    id: 'A00011',
-    nome: 'Furadeira de coluna',
+    id: 'A00028',
+    nome: 'Tratamentos termoquímicos',
     disponibilidade: 1
 })*/
-
+/*
+Post.update({ disponibilidade: 1 }, {
+    where: {
+      disponibilidade: 0
+    }
+  });
+*/
 module.exports = Post
